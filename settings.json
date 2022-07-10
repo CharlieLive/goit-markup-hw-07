@@ -1,12 +1,29 @@
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.autoSave": "afterDelay",
   "workbench.colorTheme": "One Dark Pro Darker",
-  "editor.formatOnPaste": false,
-  "editor.formatOnType": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
   "editor.fontWeight": "normal",
-  "json.schemas": [
+  "json.schemas": [],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.codeActionsOnSave": {},
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   
-  ]
+  "liveSassCompile.settings.autoprefix": [
+    ],
+    "liveSassCompile.settings.formats":[
+        
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": null
+        },
+      
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css/"
+        }
+    ]
 }

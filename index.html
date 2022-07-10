@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/style.scss">
+    <link rel="stylesheet" href="./css/style.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,6 @@
     <title>Zadanie Domowe</title>
   </head>
   <body>
-
     <!-- <--------H E A D E R-------->
 
     <header class="header">
@@ -30,19 +29,17 @@
           >
         </h3>
 
-      <!-- <--------N A V I G A T I O N-------->
+        <!-- <--------N A V I G A T I O N-------->
 
         <nav>
           <ul class="navigation-list">
-            <li class="list navigation-list-item list navigation-list-item-active">
-              <a href="./index.html" class="nav-links"
-                >Agencja</a
-              >
+            <li
+              class="list navigation-list-item list navigation-list-item-active"
+            >
+              <a href="./index.html" class="nav-links">Agencja</a>
             </li>
             <li class="list navigation-list-item">
-              <a href="./portfolio.html" class="nav-links"
-                >Portfolio</a
-              >
+              <a href="./portfolio.html" class="nav-links">Portfolio</a>
             </li>
             <li class="list navigation-list-item">
               <a href="" class="nav-links">Kontakt</a>
@@ -73,7 +70,6 @@
       </div>
     </header>
     <main>
-
       <!-- <--------B A N N E R-------->
 
       <section class="section-h1 section">
@@ -81,11 +77,14 @@
           <h1 class="section-h1-style">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
-          <button type="button" class="section-h1-button modal-btn" data-modal-open>Zamów usługę</button>
+          <button
+            type="button"
+            class="section-h1-button modal-btn"
+            data-modal-open
+          >
+            Zamów usługę
+          </button>
         </div>
-
-      
-
       </section>
 
       <!-- <--------L O R E M   I P S U M-------->
@@ -113,7 +112,6 @@
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
             </li>
-            
           </ul>
           <ul class="text-index">
             <li class="list lorem-text-box">
@@ -443,24 +441,24 @@
     <footer class="footer">
       <div class="container page-footer">
         <div>
-        <h3 class="footer-logo">
-          <a href="./index.html" class="footer-navigation">
-            <span class="navigation-web">Web</span>Studio</a
-          >
-        </h3>
-        <adress class="footer-adress">
-          <p class="adress">m. Warszawa, Aleje Jerozolimskie 21</p>
-          <a class="contact-links-footer" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-          <br />
-          <a class="contact-links-footer" href="tel:+48 111 111 111"
-            >+48 111 111 111</a
-          >
-        </adress>
-      </div>
+          <h3 class="footer-logo">
+            <a href="./index.html" class="footer-navigation">
+              <span class="navigation-web">Web</span>Studio</a
+            >
+          </h3>
+          <adress class="footer-adress">
+            <p class="adress">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <a class="contact-links-footer" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+            <br />
+            <a class="contact-links-footer" href="tel:+48 111 111 111"
+              >+48 111 111 111</a
+            >
+          </adress>
+        </div>
         <div class="footer-join">
-          <p class="footer-join-us">DOŁĄCZ DO NAS</p> 
+          <p class="footer-join-us">DOŁĄCZ DO NAS</p>
           <ul class="social-list-dark list">
             <li class="social-list-item">
               <a class="social-list-link-dark" href="#">
@@ -495,14 +493,23 @@
               ></a>
             </li>
           </ul>
-
-      </div>
+        </div>
         <div class="footer-container">
           <h3 class="footer-title">Zapisz się do newslettera</h3>
           <div class="newsletter-footer">
-            <form class="newsletter" name="newsletter" action="http://localhost:3000/posts" method="post">
+            <form
+              class="newsletter"
+              name="newsletter"
+              action="http://localhost:3000/posts"
+              method="post"
+            >
               <label>
-                <input class="newsletter__email" type="email" name="newsletter-email" placeholder="E-mail">
+                <input
+                  class="newsletter__email"
+                  type="email"
+                  name="newsletter-email"
+                  placeholder="E-mail"
+                />
               </label>
               <button class="newsletter-btn" type="submit">
                 <span>Zapisz się</span>
@@ -512,73 +519,85 @@
               </button>
             </form>
           </div>
-
         </div>
+      </div>
     </footer>
 
     <!-- <--------M O D A L-------->
 
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button type="button" class="close-btn" data-modal-close>
-            <svg class="x">
-              <use href="./images/icons.svg#icon-close"></use>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="x">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form
+          class="modal-form"
+          name="signup-form"
+          action="http://localhost:3000/posts"
+          method="post"
+        >
+          <h3 class="modal-form-title">
+            Zostaw swoje dane w formularzu poniżej
+          </h3>
+
+          <label class="text-type" for="user_name">
+            Imię
+            <svg class="icon-form icon-form-person">
+              <use href="./images/icons.svg#icon-person"></use>
             </svg>
-          </button>
-          <form class="modal-form" name="signup-form" action="http://localhost:3000/posts" method="post">
-            <h3 class="modal-form-title">Zostaw swoje dane w formularzu poniżej</h3>
-            
+            <input type="text" name="name" id="name" required />
+          </label>
 
-            <label class="text-type" for="user_name">
-              Imię
-              <svg class="icon-form icon-form-person ">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-              <input  type="text" name="name" id="name" required>
-              
-            </label>
+          <label class="text-type" for="user_phone">
+            Telefon
+            <svg class="icon-form icon-form-phone">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label class="text-type" for="user_email">
+            Email
+            <svg class="icon-form icon-form-envelope">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label class="modal-comment">
+            Komentarz
+            <textarea
+              type="text"
+              name="comment"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
 
-
-            <label class="text-type" for="user_phone">
-              Telefon
-              <svg class="icon-form icon-form-phone">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              <input type="text" name="name" id="name" required>
-              
-            </label>
-            <label class="text-type" for="user_email">
-              Email
-              <svg class="icon-form icon-form-envelope">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              <input type="text" name="name" id="name" required>
-              
-            </label>
-            <label class="modal-comment">
-              Komentarz
-              <textarea type="text" name="comment" placeholder="Wprowadź tekst"></textarea>
-            </label>
-
-            <div class="privacy-container">
-              <form class="modal-form" action="#" method="post">
-              <input class="modal-form-policy visually-hidden" id="user-policy" type="checkbox" name="policy" value="consent" required>
+          <div class="privacy-container">
+            <form class="modal-form" action="#" method="post">
+              <input
+                class="modal-form-policy visually-hidden"
+                id="user-policy"
+                type="checkbox"
+                name="policy"
+                value="consent"
+                required
+              />
               <label for="user-policy" class="modal-form-policy-text">
                 Oświadczam, iż akceptuję
                 <a class="checkbox-link" href="#rules">Regulamin</a>
                 i
-                <a class="checkbox-link" href="#privecypolicy">Politykę Prywatności</a>
+                <a class="checkbox-link" href="#privecypolicy"
+                  >Politykę Prywatności</a
+                >
                 .
               </label>
-              </form>
-              <button type="submit">Wyślij</button>
-            </div>
-          </form>
-        </div>
-      
-
-
-        
-        <script src="./js/modal.js"></script>
+            </form>
+            <button type="submit">Wyślij</button>
+          </div>
+        </form>
+      </div>
+      <script src="./js/modal.js"></script>
+    </div>
   </body>
 </html>
