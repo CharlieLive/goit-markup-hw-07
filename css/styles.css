@@ -258,23 +258,37 @@ body {
 
 /* CARDS */
 
-.section1-description h2 {
+.cards-heading {
+  margin-left: 424px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.15;
 }
 
-.section1-h2 {
-  margin-left: 424px;
-  margin-bottom: 50px;
-}
-
-.section1-list {
+.cards-list {
   display: flex;
 }
 
-.section1-list .list {
+.cards-list-item {
   margin-right: 30px;
+  list-style: none;
+  position: relative;
+}
+
+
+.cards-list-item__label {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  text-align: center;
+  margin: 0;
+  padding-top: 27px;
 }
 
 /* CREW */
@@ -905,19 +919,4 @@ input {
 
 /* ===================================== */
 
-.thumb {
-  position: relative;
-}
-.thumb > .section1-label {
-  position: absolute;
-  bottom: 0;
-  color: #fff;
-  font-weight: 700;
-  font-size: 14px;
-  background-color: rgba(47, 48, 58, 0.8);
-  width: 370px;
-  height: 70px;
-  text-align: center;
-  margin: 0;
-  padding-top: 27px;
-}
+
