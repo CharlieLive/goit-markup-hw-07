@@ -6,9 +6,28 @@
   --background-theme: #2f303a;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
+}
+
+.list {
+  list-style: none;
 }
 
 [href] {
@@ -119,20 +138,15 @@ body {
     ),
     url("/goit-markup-hw-04/images/background.jpg");
   display: flex;
+  background-size: cover;
   justify-content: center;
-  background-size: 1600px auto;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   max-width: 1600px;
   margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
-    padding-bottom: 0px;
-      width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  align-items: center;
-  
+  padding-bottom: 0px;
 }
 
 .section-h1-button {
@@ -271,24 +285,6 @@ body {
 }
 
 /* --------------- zadanie 3 ---------------  */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-
-.list {
-  list-style: none;
-}
 
 /* !!!!!!!!!!!BIN!!!!!!!!!!!! */
 
@@ -308,7 +304,6 @@ ul {
 }
 
 /* !!!!!!!!!!!BIN!!!!!!!!!!!! */
-
 
 .section-h1-style {
   margin-top: 106px;
