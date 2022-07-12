@@ -516,8 +516,8 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>
-          <svg class="x">
+        <button type="button" class="modal__close-btn" data-modal-close>
+          <svg class="modal__x">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -527,35 +527,36 @@
           action="http://localhost:3000/posts"
           method="post"
         >
-          <h3 class="modal-form-title">
+          <h3 class="modal-form__heading">
             Zostaw swoje dane w formularzu poniżej
           </h3>
 
-          <label class="text-type" for="user_name">
+          <label class="modal-form__label" for="user_name">
             Imię
-            <svg class="icon-form icon-form-person">
+            <svg class="modal-form__icon modal-form__icon--person">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
-            <input type="text" name="name" id="name" required />
+            <input class="modal-form__input" type="text" name="name" id="name" required />
           </label>
 
-          <label class="text-type" for="user_phone">
+          <label class="modal-form__label" for="user_phone">
             Telefon
-            <svg class="icon-form icon-form-phone">
+            <svg class="modal-form__icon modal-form__icon--phone">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
-            <input type="text" name="name" id="name" required />
+            <input class="modal-form__input" type="text" name="name" id="name" required />
           </label>
-          <label class="text-type" for="user_email">
+          <label class="modal-form__label" for="user_email">
             Email
-            <svg class="icon-form icon-form-envelope">
+            <svg class="modal-form__icon modal-form__icon--envelope">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <input type="text" name="name" id="name" required />
+            <input class="modal-form__input" type="text" name="name" id="name" required />
           </label>
-          <label class="modal-comment">
+          <label class="modal-form__label">
             Komentarz
             <textarea
+            class="modal-form__textarea"
               type="text"
               name="comment"
               placeholder="Wprowadź tekst"
@@ -572,17 +573,17 @@
                 value="consent"
                 required
               />
-              <label for="user-policy" class="modal-form-policy-text">
+              <label for="user-policy" class="modal-form-policy__label">
                 Oświadczam, iż akceptuję
-                <a class="checkbox-link" href="#rules">Regulamin</a>
+                <a class="privacy-container__link" href="#rules">Regulamin</a>
                 i
-                <a class="checkbox-link" href="#privecypolicy"
+                <a class="privacy-container__link" href="#privecypolicy"
                   >Politykę Prywatności</a
                 >
                 .
               </label>
             </form>
-            <button type="submit">Wyślij</button>
+            <button class="modal-form__button" type="submit">Wyślij</button>
           </div>
         </form>
       </div>
