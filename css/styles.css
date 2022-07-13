@@ -43,6 +43,17 @@ body {
   padding-bottom: 94px;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* HEADER */
 
 .header {
@@ -577,7 +588,21 @@ body {
 
 /* PORTFOLIO */
 
-.button {
+.section-button {
+  padding-bottom: 0px;
+}
+.section-button__container {
+  display: flex;
+}
+.section-button-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-list__item {
+  margin-left: 8px;
+  padding: 6px 22px;
   background-color: var(--background-color);
   color: var(--main-font-color);
   font-size: 16px;
@@ -593,19 +618,8 @@ body {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-order {
-  background-color: var(--brand-color);
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.button:hover,
-.button:focus {
+.button-list__item:hover,
+.button-list__item:focus {
   background-color: var(--brand-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -622,54 +636,32 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06;
+  margin-left: 24px;
+  margin-top: 20px;
 }
 .img-description {
   color: var(--secondary-font-color);
+  margin-left: 24px;;
 }
 
-/* --------------- zadanie 3 ---------------  */
-
-/* !!!!!!!!!!!BIN!!!!!!!!!!!! */
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  align-items: center;
-  padding: 0 15px;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-/* !!!!!!!!!!!BIN!!!!!!!!!!!! */
-
-.section-buttons {
-  padding-bottom: 0px;
-}
-.section-buttons .container {
-  display: flex;
-}
-.section-buttons-list {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-.section-buttons-list .button {
-  margin-left: 8px;
-  padding: 6px 22px;
-}
 .wrap .container {
   display: flex;
 }
-.wrap-list {
+.wrap__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.wrap-list .list {
+.wrap__item {
+  list-style: none;
+}
+
+/* CALC */
+.wrap-.list {
   flex-basis: calc((100% - 60px) / 3);
 }
+/* CALC */
+
 .box-title {
   height: 110px;
   margin: 0px;
@@ -687,6 +679,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .figure-box:hover,
 .figure-box:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -701,11 +694,12 @@ body {
   height: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 .figure-box:hover .overlay {
   transform: translateY(0);
 }
-.overlay .overlay-contain {
+.overlay__paragraph {
   color: #fff;
   font-weight: 400;
   font-size: 18px;
@@ -719,14 +713,7 @@ body {
   padding-right: 45px;
 }
 
-.figure-box .img-title {
-  margin-left: 24px;
-  padding-top: 20px;
-}
-.figure-box p {
-  margin-left: 24px;
-  margin-bottom: 20px;
-}
+
 
 /* ===== B A C K D R O P + M O D A L ===== */
 
