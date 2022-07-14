@@ -44,35 +44,6 @@ img {
   display: block;
 }
 
-/* BIN */
-
-
-
-
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-
-
-
-
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: center;
-  padding: 0 15px;
-}
-
-
-
-
-
-
-
 .list {
   list-style: none;
 }
@@ -82,7 +53,28 @@ img {
   color: inherit;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 
 /* HEADER */
 
@@ -200,11 +192,7 @@ img {
   padding-bottom: 200px;
   text-align: center;
 }
-.banner__container {
-  width: 1200px;
-  margin: 0 auto;
-  align-items: center;
-}
+
 .banner__title {
   font-weight: 900;
   color: #ffffff;
@@ -293,7 +281,6 @@ img {
 
 /* CARDS */
 
-
 .cards-heading {
   font-weight: 700;
   font-size: 36px;
@@ -328,11 +315,10 @@ img {
 /* CREW */
 
 .crew {
-  background: #f5f4fa
+  background: #f5f4fa;
 }
 
 .crew__heading {
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.15;
@@ -372,7 +358,7 @@ img {
   margin-bottom: 16px;
   color: var(--secondary-font-color);
 }
-
+/* COMPONENTS!!!!!!!!!!!!!!!!! */
 .crew-social-list {
   list-style: none;
   display: flex;
@@ -406,13 +392,8 @@ img {
   height: 20px;
   display: flex;
 }
-
+/* COMPONENTS!!!!!!!!!!!!!!!!! */
 /* CLIENTS */
-
-.client {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .client__header {
   display: flex;
@@ -475,6 +456,7 @@ img {
 .footer__logo--white {
   color: var(--white);
 }
+
 .footer__adress {
   margin-top: 20px;
   font-style: normal;
@@ -509,6 +491,9 @@ img {
   font-weight: 700;
   font-size: 14px;
 }
+
+/* COMPONENTS!!!!!!!!!!!!!!!!! */
+
 .footer-social__list {
   display: flex;
   align-items: center;
@@ -537,6 +522,8 @@ img {
   display: flex;
   fill: currentcolor;
 }
+/* COMPONENTS!!!!!!!!!!!!!!!!! */
+
 .footer-newsletter {
   padding-top: 60px;
   display: block;
@@ -648,23 +635,10 @@ img {
   cursor: pointer;
 }
 
-.description-background {
-  background-color: var(--background-color);
+.wrap {
+  margin-top: 50px;
+  padding-bottom: 50px;
 }
-
-.img-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06;
-  margin-left: 24px;
-  margin-top: 20px;
-}
-.img-description {
-  color: var(--secondary-font-color);
-  margin-left: 24px;
-}
-
 .wrap .container {
   display: flex;
 }
@@ -676,17 +650,13 @@ img {
 .wrap__item {
   list-style: none;
 }
-
-/* CALC */
 .wrap-.list {
   flex-basis: calc((100% - 60px) / 3);
 }
-/* CALC */
-
 .box-title {
   height: 110px;
   margin: 0px;
-  margin-top: -2.73px;
+  margin-top: -6px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -732,7 +702,21 @@ img {
   padding-left: 24px;
   padding-right: 45px;
 }
-
+.description-background {
+  background-color: var(--background-color);
+}
+.img-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06;
+  margin-left: 24px;
+  padding-top: 20px;
+}
+.img-description {
+  color: var(--secondary-font-color);
+  margin-left: 24px;
+}
 /* ===== B A C K D R O P + M O D A L ===== */
 
 .backdrop {
@@ -757,6 +741,12 @@ img {
   min-height: 581px;
   background-color: #fff;
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 .modal__close-btn {
   position: absolute;
   top: 8px;
@@ -776,11 +766,7 @@ img {
   z-index: 1000;
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+
 
 .modal-form {
   display: flex;
@@ -914,17 +900,6 @@ img {
   font-weight: 400;
   font-size: 12px;
   display: block;
-}
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
 }
 
 /* ===================================== */
