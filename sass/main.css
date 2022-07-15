@@ -238,16 +238,17 @@ img {
   color: var(--white);
 }
 
-.crew-social-list {
+.social-list {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 16px;
 }
-.crew-social-list:not(:last-child) {
+.social-list__item:not(:last-child) {
   margin-right: 10px;
 }
-.crew-social-list__ellipse {
+.social-list__ellipse {
   display: flex;
   width: 44px;
   height: 44px;
@@ -258,25 +259,17 @@ img {
   justify-content: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.crew-social-list__ellipse:hover, .crew-social-list__ellipse:focus {
+.social-list__ellipse:hover, .social-list__ellipse:focus {
   fill: #ffffff;
   background-color: var(--brand-color);
   cursor: pointer;
 }
-.crew-social-list__icon {
+.social-list__icon {
   width: 20px;
   height: 20px;
   display: flex;
 }
-
-.footer-social__list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-}
-
-.footer-social__ellipse {
+.social-list__ellipse--dark {
   display: flex;
   width: 44px;
   height: 44px;
@@ -287,32 +280,17 @@ img {
   color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social__ellipse:hover {
+.social-list__ellipse--dark:hover {
   background-color: #2196f3;
 }
-
-.footer-social__icon {
+.social-list__icon--dark {
   width: 20px;
   height: 20px;
   display: flex;
   fill: currentcolor;
 }
 
-.cards-heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.15;
-}
-
-.client__heading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 36px;
-}
-
-.crew__heading {
+.section__heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.15;
@@ -339,7 +317,7 @@ img {
   margin-left: 70px;
 }
 
-.footer-social__heading {
+.social-list__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -494,12 +472,10 @@ img {
 .crew__list {
   display: flex;
 }
-
 .crew__item {
   margin-right: 30px;
   list-style: none;
 }
-
 .crew__card {
   margin: 0;
   width: 270px;
@@ -508,23 +484,18 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .crew__caption {
   font-weight: 500;
   margin-top: 30px;
   margin-left: 99px;
 }
-
 .crew__name {
   margin-top: 10px;
   width: 147px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.list-job {
-  margin-bottom: 16px;
+  font-family: "Roboto";
   color: var(--secondary-font-color);
 }
 
@@ -661,18 +632,6 @@ img {
   list-style: none;
 }
 
-.box-title {
-  height: 110px;
-  margin: 0px;
-  margin-top: -6px;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  background-color: #fff;
-  position: relative;
-  z-index: 50;
-}
-
 .figure-box {
   margin: 0;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -715,7 +674,19 @@ img {
   background-color: var(--background-color);
 }
 
-.img-title {
+.wrap__box {
+  height: 110px;
+  margin: 0px;
+  margin-top: -6px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  background-color: #fff;
+  position: relative;
+  z-index: 50;
+}
+
+.wrap__img-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -724,7 +695,7 @@ img {
   padding-top: 20px;
 }
 
-.img-description {
+.wrap__img-description {
   color: var(--secondary-font-color);
   margin-left: 24px;
 }
