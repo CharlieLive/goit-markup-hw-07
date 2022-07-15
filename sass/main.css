@@ -175,10 +175,6 @@ img {
   cursor: pointer;
 }
 
-.crew {
-  background: #f5f4fa;
-}
-
 .footer {
   background-color: var(--background-theme);
   color: #ffffff;
@@ -469,6 +465,9 @@ img {
   padding-top: 27px;
 }
 
+.crew {
+  background: #f5f4fa;
+}
 .crew__list {
   display: flex;
 }
