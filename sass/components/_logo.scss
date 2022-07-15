@@ -5,9 +5,10 @@
   line-height: 1.4;
   letter-spacing: 0, 03;
   margin-right: 93px;
-}
-.header__logo--brand-color {
-  color: var(--brand-color);
+
+  &--brand-color {
+    color: var(--brand-color);
+  }
 }
 
 .footer__logo {
@@ -18,10 +19,11 @@
   font-style: normal;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-.footer__logo--brand {
+
+&--brand {
   color: var(--brand-color);
 }
-.footer__logo--white {
+&--white {
   color: var(--white);
+}
 }

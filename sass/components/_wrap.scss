@@ -1,21 +1,17 @@
 .wrap {
   margin-top: 50px;
   padding-bottom: 50px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    list-style: none;
+  }
 }
-.wrap .container {
-  display: flex;
-}
-.wrap__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.wrap__item {
-  list-style: none;
-}
-.wrap-.list {
-  flex-basis: calc((100% - 60px) / 3);
-}
+
 .box-title {
   height: 110px;
   margin: 0px;
